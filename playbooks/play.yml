@@ -1,0 +1,13 @@
+---
+- hosts: 192.168.56.103
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    evgeny
+  roles:
+    - PHP
+    - nginx
